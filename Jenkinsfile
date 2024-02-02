@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Run packer init
                 sh 'packer init packer/.'
-                sh 'packer build packer/.'
+                sh 'packer build packer/golden-ami.pkr.hcl'
             }
         }
         
