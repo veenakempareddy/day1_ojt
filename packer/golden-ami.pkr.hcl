@@ -10,7 +10,7 @@ packer {
 source "amazon-ebs" "ubuntu" {
   access_key = "AKIA2UC3EEWRHTKZVAGR"
   secret_key ="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"
-  ami_name      = "e2esa-aws-ubuntu"
+  ami_name      = "golden-ami"
   instance_type = "t2.micro"
   region        = "ap-south-1"
   source_ami = "ami-03f4878755434977f"
