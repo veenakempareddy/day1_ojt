@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your source code repository
-                git branch: 'main', url: 'https://github.com/veenakempareddy/jenkins_terraform_Integrate.git'
+                git branch: 'main', url: 'https://github.com/veenakempareddy/day1_ojt.git'
             }
         }
         
