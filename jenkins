@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout your source code repository
+                git branch: 'main', url: 'https://github.com/veenakempareddy/jenkins_terraform_Integrate.git'
+            }
+        }
+        
+        stage('build ami') {
+            steps {
+                // Run packer init
+                sh 'packer init /packer'
+            }
+        }
+        
+    }
+}
