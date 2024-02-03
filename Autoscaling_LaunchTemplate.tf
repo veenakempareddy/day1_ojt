@@ -1,3 +1,9 @@
+provider "aws" {
+    access_key = "AKIA2UC3EEWRPCV4BR7C"
+    secrete_key= "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"
+    region = "ap-south-1"
+}
+
 #To fetch the latest AMI
 data "aws_ami" "my-goldenami" {
   most_recent = true
