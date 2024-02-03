@@ -18,6 +18,9 @@ source "amazon-ebs" "ubuntu" {
         associate_public_ip_address = "true"
         subnet_id = "subnet-0e317a8dd7fc6a7d2"
         vpc_id = "vpc-0a035628ef41db634"
+        tags = {
+                 Name = "golden-ami"
+  }
 }
 
 
