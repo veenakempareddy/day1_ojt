@@ -16,6 +16,11 @@ pipeline {
                 sh 'packer build packer/golden-ami.pkr.hcl'
             }
         }
+
+        stage('create autoscaling') {
+            steps {
+                sh 'terraform init'
+                sh 'terraform apply -auto-approve'
         
     }
 }
