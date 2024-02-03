@@ -18,9 +18,12 @@ pipeline {
         }
 
         stage('create autoscaling') {
-            steps {
+            steps { 
+                sh 'cd terraform/Autoscaling_LaunchTemplate.tf'
                 sh 'terraform init'
                 sh 'terraform apply -auto-approve'
+            }
+        }
         
     }
 }
