@@ -19,7 +19,7 @@ pipeline {
 
         stage('create autoscaling') {
             steps { 
-                sh 'cd terraform'
+                //sh 'cd terraform'
                 sh 'terraform init'
                 sh 'terraform apply -auto-approve'
             }
