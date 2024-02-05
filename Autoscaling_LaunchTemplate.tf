@@ -39,5 +39,6 @@ resource "aws_autoscaling_group" "terraform-ASG" {
     tag {
     key                 = "terraform"
     value               = "ASG"
+    propagate_at_launch = "true"
   }
 }
