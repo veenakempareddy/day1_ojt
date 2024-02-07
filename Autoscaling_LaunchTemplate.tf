@@ -7,6 +7,7 @@ provider "aws" {
 #To fetch the latest AMI
 data "aws_ami" "my-goldenami" {
   most_recent = true
+  name_regex ="^golden-ami-\\d{3}"
   
  filter {
     name   = "golden-ami"
